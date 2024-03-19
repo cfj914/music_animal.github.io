@@ -1,51 +1,61 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>播放MP3音乐</title>  
-    <style>  
-        body {  
-            background-image: url('jingzhe.gif');  
-            background-size: cover;  
-            background-repeat: no-repeat;  
-            display: flex;  
-            flex-direction: column;  
-            justify-content: flex-end;  
-            align-items: center;  
-            height: 100vh;  
-            margin: 0;  
-            padding: 0;  
-            overflow: hidden;  
-        }  
-  
-       
-        #playButton {  
-            padding: 0; /* 移除内边距 */  
-            border: none; /* 移除边框 */  
-            background-color: transparent; /* 移除背景色 */  
-            color: rgb(26, 10, 116); /* 设置文字颜色 */  
-            font-size: 66px; /* 设置字体大小 */  
-            cursor: pointer; /* 添加鼠标悬停时的手型图标，表明这是一个可点击的元素 */  
-            transition: opacity 0.5s ease; /* 按钮消失的过渡效果 */  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>播放MP3音乐</title>
+    <style>
+        body {
+            background-image: url('jingzhe.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: fit-content;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
         }
-  
-        #playButton.hidden {  
-            opacity: 0;  
-            pointer-events: none; /* 防止点击事件继续触发 */  
-        }  
-    </style>  
-</head>  
-<body>  
-  
-    <!-- 音频播放器仍然放在这里，但它不会显示在页面上 -->  
-    <audio id="audioPlayer" src="ni.mp3" preload="auto" style="display: none;"></audio>  
-  
-    <!-- 开始按钮默认是隐藏的 -->  
-    <button id="playButton" class="hidden">来点音乐吧</button>  
-  
-    <!-- 引入JavaScript文件 -->  
-    <script src="test.js"></script>  
-  
-</body>  
+
+
+        #playButton {
+            padding: 0;
+            /* 移除内边距 */
+            border: none;
+            /* 移除边框 */
+            background-color: transparent;
+            /* 移除背景色 */
+            color: rgb(26, 10, 116);
+            /* 设置文字颜色 */
+            font-size: 66px;
+            /* 设置字体大小 */
+            cursor: pointer;
+            /* 添加鼠标悬停时的手型图标，表明这是一个可点击的元素 */
+            transition: opacity 0.5s ease;
+            /* 按钮消失的过渡效果 */
+        }
+
+        #playButton.hidden {
+            opacity: 0;
+            pointer-events: none;
+            /* 防止点击事件继续触发 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 音频播放器仍然放在这里，但它不会显示在页面上 -->
+    <audio id="audioPlayer" src="ni.mp3" preload="auto" style="display: none;"></audio>
+
+    <!-- 开始按钮默认是隐藏的 -->
+    <button id="playButton" class="hidden">来点音乐吧</button>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="test.js"></script>
+
+</body>
+
 </html>
